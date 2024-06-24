@@ -1,0 +1,803 @@
+<!doctype html>
+<html dir="rtl" lang="en-US">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>وب سایت اشتراک گذاری فیلم تحلیل داده</title>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="Theme/images/favicon.ico" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="Theme/css/bootstrap.min.css" />
+      <!-- Typography CSS -->
+      <link rel="stylesheet" href="Theme/css/typography.css">
+      <!-- Style -->
+      <link rel="stylesheet" href="Theme/css/style.css" />
+      <!-- Responsive -->
+      <link rel="stylesheet" href="Theme/css/responsive.css" />
+      <!-- scroll -->
+      <link rel="stylesheet" href="./Theme/css/scroll.css"/>
+   </head>
+   <body>
+      <!-- loader Start -->
+      <div id="loading">
+         <div id="loading-center">
+         </div>
+      </div>
+      <!-- loader END -->
+      <!-- Header -->
+      <header id="main-header">
+         <div class="main-header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <nav class="navbar navbar-expand-lg navbar-light p-0">
+                        <a href="#" class="navbar-toggler c-toggler" data-toggle="collapse"
+                           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                           aria-expanded="false" aria-label="Toggle navigation">
+                           <div class="navbar-toggler-icon" data-toggle="collapse">
+                              <span class="navbar-menu-icon navbar-menu-icon--top"></span>
+                              <span class="navbar-menu-icon navbar-menu-icon--middle"></span>
+                              <span class="navbar-menu-icon navbar-menu-icon--bottom"></span>
+                           </div>
+                        </a>
+                        <a class="navbar-brand" href="index.html"> <img class="img-fluid logo" style="width: 4em !important;"  src="Theme/images/logo.png"
+                           alt="آموزشگاه برنامه نویسی تحلیل داده" width="50" /> </a>
+                        
+                        <div class="mobile-more-menu" >
+                           <a href="javascript:void(0);" class="more-toggle" id="dropdownMenuButton"
+                              data-toggle="more-toggle" aria-haspopup="true" aria-expanded="false">
+                           <i class="ri-more-line"></i>
+                           </a>
+                           <div class="more-menu" aria-labelledby="dropdownMenuButton">
+                              <div class="navbar-right position-relative">
+                                 <ul class="d-flex align-items-center justify-content-end list-inline m-0">
+                                    <li>
+                                       <a href="#" class="search-toggle">
+                                       <i class="ri-search-line"></i>
+                                       </a>
+                                       <div class="search-box iq-search-bar">
+                                          <form action="#" class="searchbox">
+                                             <div class="form-group position-relative">
+                                                <input type="text" class="text search-input font-size-12"
+                                                   placeholder="type here to search...">
+                                                <i class="search-link ri-search-line"></i>
+                                             </div>
+                                          </form>
+                                       </div>
+                                    </li>
+                                    <li class="nav-item nav-icon">
+                                       <a href="#" class="search-toggle position-relative">
+                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22"
+                                             height="22" class="noti-svg">
+                                             <path fill="none" d="M0 0h24v24H0z" />
+                                             <path
+                                                d="M18 10a6 6 0 1 0-12 0v8h12v-8zm2 8.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z" />
+                                          </svg>
+                                          <span class="bg-danger dots"></span>
+                                       </a>
+                                       <div class="iq-sub-dropdown">
+                                          <div class="iq-card shadow-none m-0">
+                                             <div class="iq-card-body">
+                                                <a href="#" class="iq-sub-card">
+                                                   <div class="media align-items-center">
+                                                      <img src="Theme/images/notify/thumb-1.jpg" class="img-fluid mr-3"
+                                                         alt="streamit" />
+                                                      <div class="media-body">
+                                                         <h6 class="mb-0 ">Boop Bitty</h6>
+                                                         <small class="font-size-12">همین الان</small>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="#" class="iq-sub-card">
+                                                   <div class="media align-items-center">
+                                                      <img src="Theme/images/notify/thumb-2.jpg" class="img-fluid mr-3"
+                                                         alt="streamit" />
+                                                      <div class="media-body">
+                                                         <h6 class="mb-0 ">The Last Breath</h6>
+                                                         <small class="font-size-12">15 دقیقه قبل</small>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="#" class="iq-sub-card">
+                                                   <div class="media align-items-center">
+                                                      <img src="Theme/images/notify/thumb-3.jpg" class="img-fluid mr-3"
+                                                         alt="streamit" />
+                                                      <div class="media-body">
+                                                         <h6 class="mb-0 ">The Hero Camp</h6>
+                                                         <small class="font-size-12">1 ساعت قبل</small>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <a href="#" class="iq-user-dropdown search-toggle d-flex align-items-center">
+                                       <img src="Theme/images/user/user.jpg" class="img-fluid avatar-40 rounded-circle"
+                                          alt="user">
+                                       </a>
+                                       <div class="iq-sub-dropdown iq-user-dropdown">
+                                          <div class="iq-card shadow-none m-0">
+                                             <div class="iq-card-body p-0 pl-3 pr-3">
+                                                <a href="manage-profile.html" class="iq-sub-card setting-dropdown">
+                                                   <div class="media align-items-center">
+                                                      <div class="right-icon">
+                                                         <i class="ri-file-user-line text-primary"></i>
+                                                      </div>
+                                                      <div class="media-body ml-3">
+                                                         <h6 class="mb-0 ">مدیریت نمایه</h6>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="setting.html" class="iq-sub-card setting-dropdown">
+                                                   <div class="media align-items-center">
+                                                      <div class="right-icon">
+                                                         <i class="ri-settings-4-line text-primary"></i>
+                                                      </div>
+                                                      <div class="media-body ml-3">
+                                                         <h6 class="mb-0 ">تنظیمات</h6>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="login.html" class="iq-sub-card setting-dropdown">
+                                                   <div class="media align-items-center">
+                                                      <div class="right-icon">
+                                                         <i class="ri-logout-circle-line text-primary"></i>
+                                                      </div>
+                                                      <div class="media-body ml-3">
+                                                         <h6 class="mb-0">خروج</h6>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                           <div class="menu-main-menu-container">
+                              <ul id="top-menu" class="navbar-nav ml-auto">
+                                 <li class="menu-item">
+                                    <a href="index.html">خانه</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="movie-category.html">فیلم ها</a>
+                                 </li> 
+                                 <li class="menu-item">
+                                    <a href="show-category.html">دسته بندی</a>
+                                 </li>                                                              
+                                 <li>
+                                    <a href="#">صفحات</a>
+                                    <ul class="sub-menu">
+                                       <li><a href="about-us.html">درباره ما</a></li>
+                                       <li><a href="contact.html">تماس با ما</a></li>
+                                       <li><a href="faq.html">سوالات متداول</a></li>
+                                       <li><a href="privacy-policy.html">قوانین</a></li>
+                                    </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="navbar-right menu-right">
+                           <ul class="d-flex align-items-center list-inline m-0">
+                              <li class="nav-item nav-icon">
+                                 <a href="#" class="link">
+                                 <i class="ri-search-line"></i>
+                                 </a>
+                               
+                              </li>
+                              <li class="nav-item nav-icon">
+                                 <a href="#" class="search-toggle" data-toggle="search-toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                       class="noti-svg">
+                                       <path fill="none" d="M0 0h24v24H0z" />
+                                       <path
+                                          d="M18 10a6 6 0 1 0-12 0v8h12v-8zm2 8.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z" />
+                                    </svg>
+                                    <span class="bg-danger dots"></span>
+                                 </a>
+                                 <div class="iq-sub-dropdown">
+                                    <div class="iq-card shadow-none m-0">
+                                       <div class="iq-card-body">
+                                          <a href="#" class="iq-sub-card">
+                                             <div class="media align-items-center">
+                                                <img src="Theme/images/notify/thumb-1.jpg" class="img-fluid mr-3"
+                                                   alt="streamit" />
+                                                <div class="media-body">
+                                                   <h6 class="mb-0 ">Boot Bitty</h6>
+                                                   <small class="font-size-12">همین الان</small>
+                                                </div>
+                                             </div>
+                                          </a>
+                                          <a href="#" class="iq-sub-card">
+                                             <div class="media align-items-center">
+                                                <img src="Theme/images/notify/thumb-2.jpg" class="img-fluid mr-3"
+                                                   alt="streamit" />
+                                                <div class="media-body">
+                                                   <h6 class="mb-0 ">The Last Breath</h6>
+                                                   <small class="font-size-12">15 دقیقه قبل</small>
+                                                </div>
+                                             </div>
+                                          </a>
+                                          <a href="#" class="iq-sub-card">
+                                             <div class="media align-items-center">
+                                                <img src="Theme/images/notify/thumb-3.jpg" class="img-fluid mr-3"
+                                                   alt="streamit" />
+                                                <div class="media-body">
+                                                   <h6 class="mb-0 ">The Hero Camp</h6>
+                                                   <small class="font-size-12">1 ساعت قبل</small>
+                                                </div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li>
+                                 <a href="login.html" class="btn btn-outline-primary btn-sm border-0">ورود | ثبت نام</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+      </header>
+      <!-- Header End -->
+      <!-- Slider Start -->
+      <section id="home" class="iq-main-slider p-0 iq-rtl-direction">
+         <div id="home-slider" class="slider m-0 p-0">
+
+            <div class="slide slick-bg">
+               <img src="./Theme/images/slider/johnwick.jpg"  style="position: absolute; z-index: -1;top:0;">
+               <div class="container-fluid position-relative h-100">
+                  <div class="slider-inner h-100">
+                     <div class="row align-items-center  iq-ltr-direction h-100 ">
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                           <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+                           data-delay-in="0.6">جان ویک</h1>
+                           
+                              <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+                                <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                                    <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star-half" aria-hidden="true"></i>
+                                       </li>
+                                    </ul>
+                                    <span class="text-white ml-2">4.7(lmdb)</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mt-2 mt-md-3">
+                                       <span class="badge badge-secondary p-2">18+</span>
+                                       <span class="ml-3">2 فصل</span>
+                                    </div>
+                            </div>
+
+                            <div class="d-flex align-items-center" data-animation-in="fadeInUp" data-delay-in="1">
+                               
+                               <span class="badge badge-secondary p-2">18+</span>
+                              <span class="ml-3">2 Seasons</span>
+                           </div>
+                           <p data-animation-in="fadeInUp" data-delay-in="1.2">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                           </p>
+                           <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+                              <div class="text-primary title starring">
+                                 بازیگران: <span class="text-body">Karen Gilchrist, James Earl Jones</span>
+                              </div>
+                            <div class="text-primary title genres">
+                                ژانرها: <span class="text-body">اکشن</span>
+                              </div>
+                              <div class="text-primary title tag">
+                                 برچسب ها: <span class="text-body">اکشن, ماجراجویی, ترسناک</span>
+                              </div>
+                           </div>
+                           <div class="d-flex align-items-center r-mb-23" data-animation-in="fadeInUp" data-delay-in="1.2">
+                              <a href="show-details.html" class="btn btn-primary btn-hover" cl><i class="fa fa-play mr-2"
+                                 aria-hidden="true"></i>الان تماشا کن</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider-inner h-100">
+                        <div class="row align-items-center  iq-ltr-direction h-100 ">
+                           <div class="col-xl-6 col-lg-12 col-md-12">
+                              <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+                              data-delay-in="0.6">جان ویک</h1>
+                              
+                              <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+                                 <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                                    <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star-half" aria-hidden="true"></i>
+                                       </li>
+                                    </ul>
+                                    <span class="text-white ml-2">4.7(lmdb)</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mt-2 mt-md-3">
+                                       <span class="badge badge-secondary p-2">18+</span>
+                                       <span class="ml-3">2 فصل</span>
+                                    </div>
+                            </div>
+
+                           <div class="d-flex align-items-center" data-animation-in="fadeInUp" data-delay-in="1">
+                              
+                              <span class="badge badge-secondary p-2">18+</span>
+                              <span class="ml-3">2 Seasons</span>
+                           </div>
+                           <p data-animation-in="fadeInUp" data-delay-in="1.2">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                           </p>
+                           <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+                            <div class="text-primary title starring">
+                               بازیگران: <span class="text-body">Karen Gilchrist, James Earl Jones</span>
+                              </div>
+                              <div class="text-primary title genres">
+                                 ژانرها: <span class="text-body">اکشن</span>
+                              </div>
+                              <div class="text-primary title tag">
+                                 برچسب ها: <span class="text-body">اکشن, ماجراجویی, ترسناک</span>
+                              </div>
+                           </div>
+                           <div class="d-flex align-items-center r-mb-23" data-animation-in="fadeInUp" data-delay-in="1.2">
+                              <a href="show-details.html" class="btn btn-primary btn-hover" cl><i class="fa fa-play mr-2"
+                                 aria-hidden="true"></i>الان تماشا کن</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="slide slick-bg">
+               <img src="./Theme/images/slider/johnwick.jpg"  style="position: absolute; z-index: -1;top:0;">
+               <div class="container-fluid position-relative h-100">
+                  <div class="slider-inner h-100">
+                     <div class="row align-items-center  iq-ltr-direction h-100 ">
+                        <div class="col-xl-6 col-lg-12 col-md-12">
+                           <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+                           data-delay-in="0.6">جان ویک</h1>
+                           
+                              <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+                                <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                                    <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star-half" aria-hidden="true"></i>
+                                       </li>
+                                    </ul>
+                                    <span class="text-white ml-2">4.7(lmdb)</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mt-2 mt-md-3">
+                                       <span class="badge badge-secondary p-2">18+</span>
+                                       <span class="ml-3">2 فصل</span>
+                                    </div>
+                            </div>
+
+                            <div class="d-flex align-items-center" data-animation-in="fadeInUp" data-delay-in="1">
+                               
+                               <span class="badge badge-secondary p-2">18+</span>
+                              <span class="ml-3">2 Seasons</span>
+                           </div>
+                           <p data-animation-in="fadeInUp" data-delay-in="1.2">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                           </p>
+                           <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+                              <div class="text-primary title starring">
+                                 بازیگران: <span class="text-body">Karen Gilchrist, James Earl Jones</span>
+                              </div>
+                            <div class="text-primary title genres">
+                                ژانرها: <span class="text-body">اکشن</span>
+                              </div>
+                              <div class="text-primary title tag">
+                                 برچسب ها: <span class="text-body">اکشن, ماجراجویی, ترسناک</span>
+                              </div>
+                           </div>
+                           <div class="d-flex align-items-center r-mb-23" data-animation-in="fadeInUp" data-delay-in="1.2">
+                              <a href="show-details.html" class="btn btn-primary btn-hover" cl><i class="fa fa-play mr-2"
+                                 aria-hidden="true"></i>الان تماشا کن</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider-inner h-100">
+                        <div class="row align-items-center  iq-ltr-direction h-100 ">
+                           <div class="col-xl-6 col-lg-12 col-md-12">
+                              <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+                              data-delay-in="0.6">دوربین</h1>
+                              
+                              <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft" style="opacity: 1;">
+                                 <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                                    <ul class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                       </li>
+                                       <li>
+                                          <i class="fa fa-star-half" aria-hidden="true"></i>
+                                       </li>
+                                    </ul>
+                                    <span class="text-white ml-2">4.7(lmdb)</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mt-2 mt-md-3">
+                                       <span class="badge badge-secondary p-2">18+</span>
+                                       <span class="ml-3">2 فصل</span>
+                                    </div>
+                            </div>
+
+                           <div class="d-flex align-items-center" data-animation-in="fadeInUp" data-delay-in="1">
+                              
+                              <span class="badge badge-secondary p-2">18+</span>
+                              <span class="ml-3">2 Seasons</span>
+                           </div>
+                           <p data-animation-in="fadeInUp" data-delay-in="1.2">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                           </p>
+                           <div class="trending-list" data-wp_object-in="fadeInUp" data-delay-in="1.2">
+                            <div class="text-primary title starring">
+                               بازیگران: <span class="text-body">Karen Gilchrist, James Earl Jones</span>
+                              </div>
+                              <div class="text-primary title genres">
+                                 ژانرها: <span class="text-body">اکشن</span>
+                              </div>
+                              <div class="text-primary title tag">
+                                 برچسب ها: <span class="text-body">اکشن, ماجراجویی, ترسناک</span>
+                              </div>
+                           </div>
+                           <div class="d-flex align-items-center r-mb-23" data-animation-in="fadeInUp" data-delay-in="1.2">
+                              <a href="show-details.html" class="btn btn-primary btn-hover" cl><i class="fa fa-play mr-2"
+                                 aria-hidden="true"></i>الان تماشا کن</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+               <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44px" height="44px" id="circle"
+                  fill="none" stroke="currentColor">
+                  <circle r="20" cy="22" cx="22" id="test"></circle>
+               </symbol>
+            </svg>
+            </div>
+      </section>
+      <!-- Slider End -->
+      
+      <!-- MainContent -->
+      <div class="main-content">
+         <section id="iq-favorites">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-sm-12 overflow-hidden">
+                     <div class="iq-main-header d-flex align-items-center justify-content-between">
+                        <h4 class="main-title">جدیدترین فیلم ها</h4>
+                        <a class="iq-view-all" href="movie-category.html">مشاهده همه</a>                   
+                     </div>
+                     <div class="favorites-contens">
+                        <ul class="favorites-slider list-inline  row p-0 mb-0 iq-rtl-direction">
+
+
+                           <li class="slide-item">
+                              <a href="#" class="link">
+                              <div class="card bg-dark text-white" style="border: none;box-shadow: 2px 2px 0 2px rgba(220, 117, 138, 0.105);">
+                                 <img src="./Theme/images/movies/johnwick.jpg" class="card-img" alt="..."  style="height: 15em; width: 100%;">
+                                 <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.35);">
+                                   <h5 class="card-title">جان ویک</h5>
+                                   <p class="card-text">لایک</p>
+                                   <p class="card-text">دوبله فارسی</p>
+                                 </div>
+                               </div>
+                              </a>
+                           </li>
+
+                           <li class="slide-item">
+                              <a href="#" class="link">
+                              <div class="card bg-dark text-white" style="border: none;box-shadow: 2px 2px 0 2px rgba(220, 117, 138, 0.105);">
+                                 <img src="./Theme/images/movies/johnwick.jpg" class="card-img" alt="..."  style="height: 15em; width: 100%;">
+                                 <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.35);">
+                                   <h5 class="card-title">جان ویک</h5>
+                                   <p class="card-text">لایک</p>
+                                   <p class="card-text">دوبله فارسی</p>
+                                 </div>
+                               </div>
+                              </a>
+                           </li>
+
+                           <li class="slide-item">
+                              <a href="#" class="link">
+                              <div class="card bg-dark text-white" style="border: none;box-shadow: 2px 2px 0 2px rgba(220, 117, 138, 0.105);">
+                                 <img src="./Theme/images/movies/johnwick.jpg" class="card-img" alt="..."  style="height: 15em; width: 100%;">
+                                 <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.35);">
+                                   <h5 class="card-title">جان ویک</h5>
+                                   <p class="card-text">لایک</p>
+                                   <p class="card-text">دوبله فارسی</p>
+                                 </div>
+                               </div>
+                              </a>
+                           </li>
+
+                           <li class="slide-item">
+                              <a href="#" class="link">
+                              <div class="card bg-dark text-white" style="border: none;box-shadow: 2px 2px 0 2px rgba(220, 117, 138, 0.105);">
+                                 <img src="./Theme/images/movies/johnwick.jpg" class="card-img" alt="..."  style="height: 15em; width: 100%;">
+                                 <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.35);">
+                                   <h5 class="card-title">جان ویک</h5>
+                                   <p class="card-text">لایک</p>
+                                   <p class="card-text">دوبله فارسی</p>
+                                 </div>
+                               </div>
+                              </a>
+                           </li>
+
+                           <li class="slide-item">
+                              <a href="#" class="link">
+                              <div class="card bg-dark text-white" style="border: none;box-shadow: 2px 2px 0 2px rgba(220, 117, 138, 0.105);">
+                                 <img src="./Theme/images/movies/johnwick.jpg" class="card-img" alt="..."  style="height: 15em; width: 100%;">
+                                 <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.35);">
+                                   <h5 class="card-title">جان ویک</h5>
+                                   <p class="card-text">لایک</p>
+                                   <p class="card-text">دوبله فارسی</p>
+                                 </div>
+                               </div>
+                              </a>
+                           </li>
+
+                           <li class="slide-item">
+                              <a href="#" class="link">
+                              <div class="card bg-dark text-white" style="border: none;box-shadow: 2px 2px 0 2px rgba(220, 117, 138, 0.105);">
+                                 <img src="./Theme/images/movies/johnwick.jpg" class="card-img" alt="..."  style="height: 15em; width: 100%;">
+                                 <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.35);">
+                                   <h5 class="card-title">جان ویک</h5>
+                                   <p class="card-text">لایک</p>
+                                   <p class="card-text">دوبله فارسی</p>
+                                 </div>
+                               </div>
+                              </a>
+                           </li>
+
+
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+
+            <!-- MainContent -->
+            <div class="main-content">
+               <section id="iq-favorites">
+                  <div class="container-fluid">
+                     <div class="row">
+                        <div class="col-sm-12 overflow-hidden">
+                           <div class="iq-main-header d-flex align-items-center justify-content-between">
+                              <h4 class="main-title">جدیدترین فیلم ها</h4>
+                              <a class="iq-view-all" href="movie-category.html">مشاهده همه</a>                   
+                           </div>
+                           <div class="favorites-contens">
+                              <ul class="favorites-slider list-inline  row p-0 mb-0 iq-rtl-direction">
+      
+      
+                                 <li class="slide-item">
+                                    <a href="#" class="link">
+                                    <div class="card bg-dark text-white" style="border: none;box-shadow: 2px 2px 0 2px rgba(220, 117, 138, 0.105);">
+                                       <img src="./Theme/images/movies/matrix.jpg" class="card-img" alt="..."  style="height: 15em; width: 100%;">
+                                       <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.35);">
+                                         <h5 class="card-title">ماتریکس</h5>
+                                         <p class="card-text">لایک</p>
+                                         <p class="card-text">دوبله فارسی</p>
+                                       </div>
+                                     </div>
+                                    </a>
+                                 </li>
+
+                                 <li class="slide-item">
+                                    <a href="#" class="link">
+                                    <div class="card bg-dark text-white" style="border: none;box-shadow: 2px 2px 0 2px rgba(220, 117, 138, 0.105);">
+                                       <img src="./Theme/images/movies/matrix.jpg" class="card-img" alt="..."  style="height: 15em; width: 100%;">
+                                       <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.35);">
+                                         <h5 class="card-title">ماتریکس</h5>
+                                         <p class="card-text">لایک</p>
+                                         <p class="card-text">دوبله فارسی</p>
+                                       </div>
+                                     </div>
+                                    </a>
+                                 </li>
+
+
+                                 <li class="slide-item">
+                                    <a href="#" class="link">
+                                    <div class="card bg-dark text-white" style="border: none;box-shadow: 2px 2px 0 2px rgba(220, 117, 138, 0.105);">
+                                       <img src="./Theme/images/movies/matrix.jpg" class="card-img" alt="..."  style="height: 15em; width: 100%;">
+                                       <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.35);">
+                                         <h5 class="card-title">ماتریکس</h5>
+                                         <p class="card-text">لایک</p>
+                                         <p class="card-text">دوبله فارسی</p>
+                                       </div>
+                                     </div>
+                                    </a>
+                                 </li>
+
+                                 <li class="slide-item">
+                                    <a href="#" class="link">
+                                    <div class="card bg-dark text-white" style="border: none;box-shadow: 2px 2px 0 2px rgba(220, 117, 138, 0.105);">
+                                       <img src="./Theme/images/movies/matrix.jpg" class="card-img" alt="..."  style="height: 15em; width: 100%;">
+                                       <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.35);">
+                                         <h5 class="card-title">ماتریکس</h5>
+                                         <p class="card-text">لایک</p>
+                                         <p class="card-text">دوبله فارسی</p>
+                                       </div>
+                                     </div>
+                                    </a>
+                                 </li>
+
+                                 <li class="slide-item">
+                                    <a href="#" class="link">
+                                    <div class="card bg-dark text-white" style="border: none;box-shadow: 2px 2px 0 2px rgba(220, 117, 138, 0.105);">
+                                       <img src="./Theme/images/movies/matrix.jpg" class="card-img" alt="..."  style="height: 15em; width: 100%;">
+                                       <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.35);">
+                                         <h5 class="card-title">ماتریکس</h5>
+                                         <p class="card-text">لایک</p>
+                                         <p class="card-text">دوبله فارسی</p>
+                                       </div>
+                                     </div>
+                                    </a>
+                                 </li>
+      
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+    <footer id="contact" class="footer-one iq-bg-dark">
+     
+        <!-- Address -->
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row footer-standard">
+                    <div class="col-lg-7">
+                        <div class="widget text-left">
+                            <div class="menu-footer-link-1-container">
+                                <ul id="menu-footer-link-1" class="menu p-0">
+                                    <li id="menu-item-7314" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7314">
+                                        <a href="#">شرایط استفاده</a>
+                                    </li>
+                                    <li id="menu-item-7316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7316">
+                                        <a href="../html/privacy-policy.html">سیاست حفظ حریم خصوصی</a>
+                                    </li>
+                                    <li id="menu-item-7118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7118">
+                                       <a href="../html/faq.html">سوالات متداول</a>
+                                   </li>
+                                    <li id="menu-item-7118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7118">
+                                        <a href="../html/watch-video.html">لیست تماشا</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget text-left">			
+                            <div class="textwidget">
+                              <a href="https://www.tahlildadeh.com">
+                                <img src="./Theme/images/logo.png" alt="آموزشگاه تحلیل داده" width="100em">
+                              </a>
+                              <hr/>
+                              <h5>آموزشگاه برنامه نویسی تحلیل داده</h5>
+                              <p>آدرس : تهران - خیابان شریعتی - بالاتر از خیابان ملک - روبروی اتاق اصناف - جنب داروخانه ستارگان - پلاک 561 - طبقه2 - واحد7</p>
+                              <p>تلفن : 88146323 - 88146330</p>
+                              <a href="https://www.tahlildadeh.com/">وب سایت : www.tahlildadeh.com</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-2 col-md-6 mt-4 mt-lg-0">
+                        <h6 class="footer-link-title">
+                            ما را دنبال کنید :
+                        </h6>
+                        <ul class="info-share"> 
+                            <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fa fa-github"></i></a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                        <div class="widget text-left">
+                            <div class="textwidget">
+                                <h6 class="footer-link-title">اپلیکیشن ما</h6>
+                                <div class="d-flex align-items-center">
+                                    <a class="app-image" href="#">
+                                        <img src="Theme/images/footer/01.jpg" alt="play-store">
+                                    </a><br>
+                                    <a class="ml-3 app-image" href="#"><img src="Theme/images/footer/02.jpg" alt="app-store"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Address END -->
+    </footer>
+
+      <!-- MainContent End-->
+      <!-- back-to-top -->
+      <div id="back-to-top">
+         <a class="top" href="#top" id="top"> <i class="fa fa-angle-up"></i> </a>
+      </div>
+      <!-- back-to-top End -->
+      <!-- jQuery, Popper JS -->
+      <script src="Theme/js/jquery-3.4.1.min.js"></script>
+      <script src="Theme/js/popper.min.js"></script>
+      <!-- Bootstrap JS -->
+      <script src="Theme/js/bootstrap.min.js"></script>
+      <!-- Slick JS -->
+      <script src="Theme/js/slick.min.js"></script>
+      <!-- owl carousel Js -->
+      <script src="Theme/js/owl.carousel.min.js"></script>
+      <!-- select2 Js -->
+      <script src="Theme/js/select2.min.js"></script>
+      <!-- Magnific Popup-->
+      <script src="Theme/js/jquery.magnific-popup.min.js"></script>
+      <!-- Slick Animation-->
+      <script src="Theme/js/slick-animation.min.js"></script>
+      <!-- Custom JS-->
+      <script src="Theme/js/custom.js"></script>
+   </body>
+</html>
